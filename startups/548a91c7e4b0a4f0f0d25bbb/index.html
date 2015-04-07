@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="projectShowcase" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>中子星</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/bp.css">
+    <style>
+        .bg-banner {
+            background-image: url(http://7sbpff.com1.z0.glb.clouddn.com/images/banner/neutronStar.jpg)
+        }
+        .text-heading {
+            color: white;
+        }
+    </style>
+
+</head>
+<body ng-controller="panelController as panelCtrl">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed fix-size" data-toggle="collapse" data-target="#nav-links">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-chevron-down text-muted"></span>
+            </button>
+            <a class="navbar-brand" href="#">中子星</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="nav-links">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active:panelCtrl.isPanelSet(1)}"><a href="#" ng-click="panelCtrl.setPanel(1)">项目概述</a>
+                </li>
+                <li ng-class="{active:panelCtrl.isPanelSet(2)}"><a href="#" ng-click="panelCtrl.setPanel(2)">商业模式</a>
+                </li>
+                <li ng-class="{active:panelCtrl.isPanelSet(3)}"><a href="#" ng-click="panelCtrl.setPanel(3)">核心团队</a>
+                </li>
+                <li ng-class="{active:panelCtrl.isPanelSet(4)}"><a href="#" ng-click="panelCtrl.setPanel(4)">发展战略</a>
+                </li>
+                <li ng-class="{active:panelCtrl.isPanelSet(5)}"><a href="#" ng-click="panelCtrl.setPanel(5)">融资计划</a>
+                </li>
+                <li ng-class="{active:panelCtrl.isPanelSet(6)}"><a href="#" ng-click="panelCtrl.setPanel(6)">项目点评</a>
+                </li>
+                <li ng-class="{active:panelCtrl.isPanelSet(7)}"><a href="#" ng-click="panelCtrl.setPanel(7)">投资互动</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+
+<div ng-show="panelCtrl.isPanelSet(1)">
+
+    <div class="bg-banner text-heading">项目概述</div>
+    <div class="container">
+        <div class="row margin-top">
+            <div class="col-xs-3 text-title border-right">公司名称</div>
+            <div class="col-xs-9 text-content">
+                中子星科技
+                <p>
+                   中子星科技，项目致力于打造一个互联网资管生态系统，充分利用互联网技术的优势，连接投资者与专业投资顾问。
+                </p>
+            </div>
+        </div>
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">商业模式</div>
+            <div class="col-xs-9 text-content">中子星是一个在线投资平台，为个人和机构投资者提供定制化、一体化的量化资管服务，为投资顾问团体及个人提供业绩展示和资金支持。</div>
+        </div>
+	 <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">核心团队</div>
+            <div class="col-xs-9 text-content">
+	      团队核心成员为华尔街资深量化交易专家，对于量化投资有深刻的理解并保持着优秀的交易成绩。
+	    </div>
+        </div>
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">融资计划</div>
+            <div class="col-xs-9 text-content">
+               计划融资人民币3,000万元人民币，出让公司股权20%。
+                <p>
+                    <span>领投人：</span>
+                </p>
+                <p>
+                   杨大勇，尚诺集团董事长兼CEO，领投人民币150万元，占1%股权
+                </p>
+	       <p>
+		 刘志硕领衔大河系创投基金，投资人民币2,250万元，占15%股权。
+	       </p>
+
+                <p><span>
+                    跟投人：
+                </span></p>
+		<p>
+		  蝌蚪众筹线上募资50份，15万元/份，其中领投人杨大勇领投10份（即上述人民币150万元投资额），其他跟投人跟投40份，合计持有公司5%股权。
+		</p>
+            </div>
+        </div>
+
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">投资亮点</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>A. </span>
+                    团队优秀的量化投资管理能力。团队核心成员为华尔街资深量化交易专家，对于量化投资有深刻的理解并保持着优秀的交易成绩。
+                </p>
+
+                <p>
+                    <span>B. </span>
+                    成熟的量化策略评价能力。母公司宽谷奥利安旗下子公司宽奥资产主要从事量化母基金业务，广泛寻找市场中的量化投资团队，以数量化的方法对他们进行评价，筛选其中最优秀的团队进行投资。
+                </p>
+
+                <p>
+                    <span>C. </span>
+                    完善的量化团队孵化项目。母基金一期已与<span>联想、海尔、明光集团、地方政府</span>等机构签署投资协议，总共募集<span>1亿</span>元人民币，首批种子基金将于十二月底前进行正式投资。母基金二期计划募资总额5亿，杠杆后总额<span>25亿</span>，预期投资<span>50~100家</span>优秀团队，将为中子星引入<span>200~400余个</span>优质策略。
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div ng-show="panelCtrl.isPanelSet(2)">
+
+    <div class="bg-banner text-heading">商业模式</div>
+    <div class="container">
+        <div class="row margin-top">
+            <div class="col-xs-3 text-title border-right">业务介绍</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>A. </span>
+                   核心流程：中子星项目致力于打造一个互联网资管生态系统，充分利用互联网技术的优势，连接投资者与专业投资顾问：
+                </p>
+		  <a href="img/flow.png" target="_blank"> <img src="img/flow.png" class="img-responsive" ></a>
+                <p>
+                    <span>B. </span>
+                    核心服务：在中子星平台上，投资者可以定制化的投资中国的明星量化基金；专业团队可以融入便宜的资金，迅速做大；草根创客可以利用平台技术和资金快速开发策略，成为未来的量化明星。
+                </p>
+		 <a href="img/service.png" target="_blank"><img src="img/service.png" class="img-responsive" ></a>
+            </div>
+        </div>
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">运营情况</div>
+            <div class="col-xs-9 text-content">
+	       <table class="table table-bordered table-hover table-striped">
+                <tr>
+
+                    <th>项目进展</th>                  
+                </tr>
+
+                <tr>
+                  <td>2014年8月</td>
+		</tr>
+		<tr>
+                    <td>中子星产品原型开发成功</td>                   
+                </tr>
+		 <tr>
+                   <td>2014年9月</td>
+		 </tr>
+		 <tr>
+                    <td>中子星与券商、目基金对接，策略库突破100</td>                   
+                 </tr>
+		  <tr>
+                    <td>2014年10月</td>
+		     </tr>
+		 <tr>
+                    <td>中子星实现创客功能并引入孵化基金</td>                   
+                  </tr>
+		   <tr>
+                     <td>2014年11月</td>
+		      </tr>
+		 <tr>
+                    <td>大河汇智按照1.5亿元估值对中子星投资</td>                   
+                </tr>
+                <tr>              
+            </table>
+                <p>
+                  <span>A. 专业客观的策略展示及分析。</span>
+		  中子星依靠完善的数据平台，对每个策略专业客观的展示了实时盘中收益曲线、仓位和损益分析。                   
+                </p>
+		 <a href="img/app.png" target="_blank"><img src="img/app.png" class="img-responsive"/></a>
+               <p>
+		 <span>B. 自由组合，打造定制化策略</span><br/>
+		 <ul>
+		   <li>勾选精选策略池中的策略，自主配比，一键生成自己的策略</li>
+		   <li>保持策略于自选池，可持续跟踪业绩表现</li>
+		 </ul>
+                   
+
+	       </p>
+	       	 <a href="img/app2.png" target="_blank"><img src="img/app2.png" class="img-responsive"/></a>
+                <p>
+                    <span>C. 业绩宣传和资金投入 </span>
+                    <ul>
+		      <li>用“我要挂单”轻松上传交易文件，向平台客户进行业绩展示</li>
+		      <li>业绩优秀的投顾有机会获得宽奥资本量化母基金的资金投入</li>
+		    </ul>
+
+                </p>
+
+		 <a href="img/app3.png" target="_blank"><img src="img/app3.png" class="img-responsive"/></a>
+
+            </div>
+        </div>
+
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">市场现状</div>
+            <div class="col-xs-9 text-content">
+
+
+                <p>
+                    <span>A.</span>
+                    量化投资在海外蓬勃发展。在国外，数量化投资方法已广泛应用。截至2013年，数量化基金管理的总资产达到2156亿美元，相比1988年数量化基金管理的80亿美元资产来说，年均增长速度达到20%。
+                </p>
+
+                <p>
+                    <span>B. </span>
+                    量化投资在中国刚刚起步。2013年量化投资在中国出现爆发式增长，整个量化投资基金管理规模已达到3千亿元，大部分量化产品取得了15%以上的收益率。预计在2020年，中国量化投资基金总量将超过到6万亿人民币。
+                </p>
+		 <a href="img/chart.png" target="_blank">	<img src="img/chart.png" class="img-responsive"/>     </a>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+<div ng-show="panelCtrl.isPanelSet(3)">
+
+    <div class="bg-banner text-heading">核心团队</div>
+    <div class="container">
+
+        <div class="row margin-top">
+            <div class="col-xs-3 text-title border-right">团队简历</div>
+            <div class="col-xs-9 text-content">
+                <div class="row people">
+                    <div class="col-xs-4 no-padding-right">
+                        <img src="img/zp.png" alt="" class="img-responsive"/>
+                    </div>
+                    <div class="col-xs-8">
+                        <h4>张鹏</h4>
+                        <small>创始人</small>
+                    </div>
+                </div>
+                <p>
+                   美国宾夕法尼亚大学沃顿商学院统计学博士,拥有近十年金融市场经验，曾先后任职瑞士信贷银行全球套利交易部和瑞士银行投资银行部，从事海外市场的证券交易投资及投行业务，管理数亿美元的投资组合并取得良好业绩。
+                </p>
+
+                <p>
+                   回国后，先后创办信弘天禾资产管理中心和宽谷奥立安信息科技有限公司，从事中国市场的量化投资和金融信息平台建设。
+                </p>
+               
+
+                <div class="row people">
+                    <div class="col-xs-4 no-padding-right">
+                        <img src="img/slg.png" alt="" class="img-responsive"/>
+                    </div>
+                    <div class="col-xs-8">
+                        <h4>宋立国</h4>
+                        <small>联合创始人</small>
+                    </div>
+                </div>
+                <p>
+		美国范德比尔特大学物理学博士,计算机科学硕士、北京大学物理学士和法律副修。 曾任美国物理学会会员、北京大学物理系学生会主席。
+		</p>
+
+                <p>
+                    2004年开始任瑞士瑞信银行副总裁，负责瑞银全球指数套利及统计套利策略的设计，套利交易及应用。主持并研发了流动性转换器（研发费用：200万美元），智能订单路由器（研发经费：500万美元），高速订单执行，综合指数套利平台（研发费用：2亿美元）等系列交易管理系统金融工程。
+                </p>
+
+                <div class="row people">
+                    <div class="col-xs-4 no-padding-right">
+                        <img src="img/hx.png" alt="" class="img-responsive"/>
+                    </div>
+                    <div class="col-xs-8">
+                        <h4>黄旭</h4>
+                        <small>联合创始人</small>
+                    </div>
+                </div>
+                <p>
+                   中央财经大学精算科学和英国伦敦City university精算管理双硕士学位。
+                </p>
+                <p>
+                   曾在中国人寿、德勤和国家开发银行从事保险精算、投行、私募股权投资工作，有近十年金融从业经验。
+                </p>
+		 <div class="row people">
+                    <div class="col-xs-4 no-padding-right">
+                        <img src="img/zf.png" alt="" class="img-responsive"/>
+                    </div>
+                    <div class="col-xs-8">
+                        <h4>张凡</h4>
+                        <small>联合创始人</small>
+                    </div>
+                </div>
+                <p>
+                  清华大学计算机科学硕士、北京航空航天大学机电一体化学士。
+                </p>
+                <p>
+                  曾先后就职于百度、搜狐等知名互联网公司，拥有近10年互联网行业工作经验。张凡在搜索推荐、位置服务和个性化数据挖掘等方面具有专业技能和丰富经验。
+                </p> 
+            </div>
+        </div>
+
+    </div>
+</div>
+<div ng-show="panelCtrl.isPanelSet(4)">
+
+    <div class="bg-banner text-heading">发展战略</div>
+    <div class="container">
+        <div class="row margin-top">
+            <div class="col-xs-3 text-title border-right">战略阐述</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                 中子星将以量化投资研究、量化团队筛选评级力为核心竞争力，通过量化投资母基金吸引外部优秀投顾团队，以量化资管产品为切入点建设中国最专业的互联网理财平台：
+                </p>
+
+                <p>
+                    <span>聚财： </span>
+                   筛选最优秀的团队，为投资者提供优质资管产品。
+
+                </p>
+
+		 <p>
+                    <span>融智： </span>
+                  发挥平台优势，以“母基金”吸引外部优秀投顾团队进行合作。
+                 </p>
+		  <p>
+                    <span>共振： </span>
+                   利用互联网金融模式使人才与资产共振，建立大资管平台
+
+                </p>
+
+            </div>
+        </div>
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">产品众筹方案</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>筹集计划：</span>
+                </p>
+
+                <p>
+                    2015年一季度前筹集2亿元
+
+                </p>
+                <p>
+                   每份投资100万元，限额200名
+
+                </p>
+               <p>
+                    <span>投资回报：</span>
+               </p>
+	        <p>
+                 投资者将享受中子星终身VIP尊贵待遇
+
+                </p>
+		<p>
+                  享受专属策略订制化服务
+
+                </p>
+		<p>
+                  根据带来的新用户数享受分级减免管理费乃至利润分享
+
+                </p>
+		<p>
+                 每位投资者能够享有中子星平台上10个优质策略的优先认购权
+
+                </p>
+		
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div ng-show="panelCtrl.isPanelSet(5)">
+
+    <div class="bg-banner text-heading">融资计划</div>
+    <div class="container">
+      <div class="row margin-top">
+	<div class="col-xs-offset-3 col-xs-9 text-content">
+	  <p>中子星此轮融资人民币3,000万元，估值人民币1.5亿元。</p>
+	  <p>其中人民币750万元投资额在蝌蚪众筹平台进行众筹，其中投资总额将分成50份进行认购，每份15万元，领投人杨大勇领投10份。</p>
+	</div>
+	
+      </div>
+        <div class="row">
+            <div class="col-xs-3 text-title border-right">领投人介绍</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>杨大勇</span>，尚诺集团董事长兼CEO。
+                </p>
+
+                <p>
+		  尚诺集团是软银（Soft Bank）旗下基金和新加坡香港的毅园资本Garden投资的金融服务集团，涉及小微金融服务的融资担保、保理和投资业务机构“安家世行”、资产管理机构“安家信诺”。
+                </p>
+		<p>
+		  北京大学经济学院经济学学士，清华大学经管学院数量经济学硕士，人民大学商学院产业经济学博士，中央财经大学金融学院硕士导师。中国互联网金融产业联盟执行理事、秘书长，北京大学金融校友联合会理事。
+		</p>
+		<p>
+		  专注于金融服务特别是互联网金融和大数据领域发展和投资，对文化创意、医疗健康、电子商务也有涉及。支付金融机构“易宝金融”和移动互联网金融服务机构“亲亲小贷”董事，供应链金融数据机构“金电联行”顾问。
+		</p>
+		<hr/>
+		<p>
+		 <span> 刘志硕</span>，天使投资人。
+		</p>
+		<p>
+		 毕业于哈尔滨工业大学，中国经济50人论坛企业家理事，首届中关村企业家咨询委员会委员，北京市青联常委。
+		</p>
+		<p>
+		  加拿大注册天使投资人，作为个人天使投资了畅游（CYOU US）、拉卡拉、欧地安（为闽福发A收购）、广厦网络（430128 CH）等14家公司，参股搜狐网络（SOHU US）、学大教育（XUE US）等二十余家公司，同时参与了多个创业投资基金包括启迪日新、祟德宏信、北软汇智、天津汇智、创新谷，大河融科、英诺融科等。
+
+		</p>
+            </div>
+        </div>
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">融资结构</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>估值:</span><br/>
+                    计划融资人民币3,000万元人民币，出让公司股权20%，投后估值人民币1.5亿元。
+                </p>
+
+              
+
+                <p>
+                    <span>领投人:</span><br/>
+		    杨大勇，尚诺集团董事长兼CEO，领投人民币150万元，占1%股权。
+		    刘志硕领衔大河系创投基金，投资人民币2,250万元，占15%。
+                </p>
+
+                <p>
+                    <span>跟投人:</span><br/>
+		   蝌蚪众筹线上募资50份，15万元/份，其中领投人杨大勇领投10份（即上述人民币150万元投资额），其他跟投人跟投40份，合计持有公司5%股权。
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div ng-show="panelCtrl.isPanelSet(6)">
+
+    <div class="bg-banner text-heading">项目点评</div>
+    <div class="container">
+        <div class="row margin-top">
+            <div class="col-xs-3 text-title border-right">可比公司</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                   如果说简单的“网银”是互联网金融1.0版，余额宝、P2P贷款等平台类产品是互联网金融2.0版，那么结合大数据、云计算等技术与一身的互联网证券投资则开启了互联网金融3.0时代。
+                </p>
+                   <a href="img/kb.png" target="_blank">  <img src="img/kb.png" alt="" class="img-responsive"/></a>
+
+		<p>
+	Motif Investing是一家来自美国圣马特奥的公司，其产品Motif和Google+的分享功能类似，用户可以自行选择想要分享的圈子，此外，它能基于当下热门和时效性的主题生成一系列股票投资组合，为用户提供投资组合购买的参考。网站完全透明，每一个投资理念或者是主题可以都可以基于几大指数进行比较。用户可以基于某一主题的多支股票进行定制，可以清楚地看到Motif社区是否已经买进了某一主题的股票，也可以修改购买的股票和对权重进行修改。用户也可以选择不使用社交元素，即对特定的投资理念不进行社交分享。
+		</p>
+		<p>
+		 Motif由微软前高管哈迪普·瓦利亚(Hardeep Walia)和套保基金经理塔里克·希拉利(Tariq Hilaly)联合打造。 近日获得高盛美元3,500万的D轮融资，开始全球扩张。
+		</p>
+		
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-show="panelCtrl.isPanelSet(7)">
+
+    <div class="bg-banner text-heading">投资互动</div>
+    <div class="container">
+        <div class="row margin-top">
+            <div class="col-xs-3 text-title border-right">线下路演</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                   2014年12月11日，中子星项目在金融客咖啡路演，吸引了金融客咖啡发起人和五道口金融学院EMBA的朋友们，中关村管委会领导及中关村股权交易中心领导也来考察指导。
+                </p>
+
+		<a href="img/ly.jpg" target="_blank"> <img src="img/ly.jpg" alt="" class="img-responsive"/></a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/jquery.min.js"></script>
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/bootstrap.min.js"></script>
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/angular.min.js"></script>
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/bp.js"></script>
+</body>
+</html>

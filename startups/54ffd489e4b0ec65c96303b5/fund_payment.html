@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="projectShowcase" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>游心旅行</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://7sbpff.com1.z0.glb.clouddn.com/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/jquery.fancybox.css">
+    <script src="http://7sbpff.com1.z0.glb.clouddn.com/js/jquery.fancybox.js"></script>
+                    
+    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/jquery.fancybox-thumbs.css">
+    <script src="http://7sbpff.com1.z0.glb.clouddn.com/js/jquery.fancybox-thumbs.js"></script>
+
+    <script src="http://7sbpff.com1.z0.glb.clouddn.com/js/jquery.fancybox.pack.js"></script>
+
+<link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/bp.css">
+    <style>
+        .bg-banner {
+            background-image: url(http://7sbpff.com1.z0.glb.clouddn.com/images/banner/uthing.png)
+        }
+        .text-heading {
+            color: white;
+        }
+    </style>
+
+</head>
+<body ng-controller="panelController as panelCtrl">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <!--<button type="button" class="navbar-toggle collapsed fix-size" data-toggle="collapse" data-target="#nav-links">
+                <span class="glyphicon glyphicon-chevron-down text-muted"></span>
+            </button>
+            -->
+            <a class="navbar-brand" href="#">游心旅行</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="nav-links">
+            <ul class="nav navbar-nav">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+
+<div ng-show="panelCtrl.isPanelSet(1)">
+
+    <div class="bg-banner text-heading">投后管理</div>
+      
+    <div class="container">
+
+
+        <div class="row margin-top">
+            <h4 class="text-primary">旅行基金打款通知</h4>
+            <div class="col-xs-3 text-title border-right">通知</div>
+            <div class="col-xs-9 text-content">
+                <p>尊敬的蝌蚪众筹投资人，</p>
+                <p>您好！很荣幸您参与了此次游心旅行的+U计划，并已完成注册认筹。</p>
+                <p>此次众筹的流程您已完成了第一步，接下来您需要进行以下两步，方可完成认筹，成功成为游心旅行的股东，并同时成为游心会VIP会员。</p>
+                <p>现在需要您在5个工作日内将您所选择的旅行基金款项汇款至游心旅行的公司账户，以便进行下一步操作。游心旅行的工作人员会在收到您款项的3个工作日内与您联系，并提供相应的收据。</p>
+                <br />
+                <p>账户信息：</p>
+                <p>户名：宁波游心信息科技发展有限公司北京分公司</p>
+                <p>开户行：招商银行北京万通中心支行</p>
+                <p>账号：110912305810802</p>
+                <p>众筹股东如有更多的问题需要咨询，可以按照以下方式联络：</p>
+                <a target="_blank" href="img/xiaolu.jpg" target="_blank" class="fancybox">
+                    <img src="img/xiaolu.jpg" alt="" class="img-responsive"/>
+                </a>
+
+                <p>旅行基金常见问题如下，如有其它疑问，欢迎按照联络↑↑↑↑↑↑↑↑↑咨询。 </p>
+            </div>
+        </div>
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">常见问题</div>
+            <div class="col-xs-9 text-content">
+                <p>问：旅行基金的适用范围？</p>
+                <p>答：旅行基金适用于游心网所有的产品。包括单独的机票预订、酒店预订。（特价产品除外）</p>
+                <hr>
+                <p>问：旅行基金消费时间有没有限制？</p>
+                <p>答：是没有时间限制的。而且对于普通用户15万元起才接单的定制旅行，众筹股东定制旅行是不受15万元门槛限制的。</p>
+                <hr>
+                <p>问：为什么旅行基金到了第二年就要打8折，第三年就恢复金额？</p>
+                <p>答：因为本次众筹最主要的目的就是筹集一群真正喜欢旅行的朋友，也是我们的目标用户，通过适用我们的产品去影响身边的朋友做到口碑传播。如果一直不去使用旅行基金的朋友也不是我们本次众筹的目标用户。并且即使第二年打了8折相当于8万仍然没有亏，这个条款是为了鼓励大家旅行。</p>
+                <hr>
+                <p>问：基金的钱，2015年底没使用完的，按照80%结算是什么意思？是否平白无故就损失钱了？</p>
+                <p>答：不是的。举例来讲，您选择了7万元的旅行基金，2015年实际可以消费额度为10万元，相当于7折。如果截止到2015年12月31日预存旅行基金未消费或仍有余额，那从2016年1月1日起，就按照余额的80%重新进行账户核算。</p>
+                <p>如，账户到2015年12月31日，剩余5万，那么2016年最终可用额度为5万*80%=4万元，相比预存金额相当于您仍享有8.7折的旅行基金折扣。</p>
+                <hr>
+                <p>问：旅行基金是否只能自己使用？</p>
+                <p>答：不是，用它给自己的朋友、家人都可以购买产品。</p>
+                <hr>
+                <p>问：旅行基金如何使用？</p>
+                <p>答：游心旅行会用U币（游心旅行专用的电子货币）的形式充值到会员的个人账户上，在线结款时选择使用U币即可。U币等额于现金。</p>
+                <hr>
+                <p>问：旅行基金是否要等到众筹流程结束，股权变更完毕才能使用？</p>
+                <p>答：不是，只要交了众筹的管理费，打入了旅行基金就可以使用。股权的变更需要两个月左右。为了不耽误大家今年旅行的计划，可以在那之前使用。</p>
+                <hr>
+                <p>问：NGO如何评选游心奖?奖品是什么？</p>
+                <p>答：相关的NGO组织正在洽谈中，具体事宜会员管理人员会统一公布。</p>
+                <hr>
+                <p>问：游心如何分享？</p>
+                <p>答：旅途上的照片，文字感受或者攻略交给游心会的小编。编辑好之后游心会在游心的宣传平台上进行宣传。会员也可以在自己的朋友圈等自媒体宣传，让更多人知道提供品质旅行的游心</p>
+                <hr>
+                <p>问：专属银行联名卡？</p>
+                <p>答：具体情况还在洽谈当中，会员管理相关人员会给股东争取到最大的权益。</p>
+                <hr>
+                <p>问：股权投资款，什么时候打钱？</p>
+                <p>答：目前在线参与认筹的投资人，只需登陆蝌蚪众筹官网，先缴纳服务费，锁定份额，根据会员后台通知函的要求预存完旅行基金即可。我们预计在下个月集中公布投资款账户信息，自公布之日起10日内，您将资金缴入相应账户即可。两份资金都到位，认筹才算成功。</p>
+                <hr>
+                <p>问：股东推荐的用户的优惠如何计算？</p>
+                <p>答：反股东推荐的用户在游心上的产品消费，每次被推荐用户消费额的2%作为奖励充值到股东的U币账户，且被推荐客户获得等额U币在下次消费时抵现使用。</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+                                                
+    });
+</script>
+
+
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/bootstrap.min.js"></script>
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/angular.min.js"></script>
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/bp.js"></script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>
+    <html lang="en" ng-app="projectShowcase" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+        <!--[if IE 8]>
+        <html lang="en" ng-app="projectShowcase" class="no-js lt-ie9"> <![endif]-->
+            <!--[if gt IE 8]><!-->
+            <html lang="en" ng-app="projectShowcase" class="no-js"> <!--<![endif]-->
+                <head>
+                    <meta charset="utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+                    <title>生活圈</title>
+                    <meta name="description" content="">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <script src="http://7sbpff.com1.z0.glb.clouddn.com/js/jquery.min.js"></script>
+                    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/bp.css">
+                    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/jquery.fancybox.css">
+                    <script src="http://7sbpff.com1.z0.glb.clouddn.com/js/jquery.fancybox.js"></script>
+                    
+                    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/jquery.fancybox-thumbs.css">
+                    <script src="http://7sbpff.com1.z0.glb.clouddn.com/js/jquery.fancybox-thumbs.js"></script>
+
+                    <script src="http://7sbpff.com1.z0.glb.clouddn.com/js/jquery.fancybox.pack.js"></script>
+                    <style>
+                        .bg-banner {
+                        background-image: url(http://7sbpff.com1.z0.glb.clouddn.com/images/banner/lifeC_banner.jpg)
+                        }
+                    </style>
+
+
+                </head>
+                <body ng-controller="panelController as panelCtrl">
+
+                    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed fix-size" data-toggle="collapse" data-target="#nav-links">
+                                <span style="color:#cfa460" >菜单</span>
+                            </button>
+                            <a class="navbar-brand" href="#">生活圈</a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="nav-links">
+                            <ul class="nav navbar-nav">
+                                <li ng-class="{active:panelCtrl.isPanelSet(1)}"><a href="#" ng-click="panelCtrl.setPanel(1)">项目概述</a>
+                                </li>
+                                <li ng-class="{active:panelCtrl.isPanelSet(2)}"><a href="#" ng-click="panelCtrl.setPanel(2)">商业模式</a>
+                                </li>
+                                <li ng-class="{active:panelCtrl.isPanelSet(3)}"><a href="#" ng-click="panelCtrl.setPanel(3)">核心团队</a>
+                                </li>
+                                <li ng-class="{active:panelCtrl.isPanelSet(4)}"><a href="#" ng-click="panelCtrl.setPanel(4)">发展战略</a>
+                                </li>
+                                <li ng-class="{active:panelCtrl.isPanelSet(5)}"><a href="#" ng-click="panelCtrl.setPanel(5)">融资计划</a>
+                                </li>
+                                <li ng-class="{active:panelCtrl.isPanelSet(6)}"><a href="#" ng-click="panelCtrl.setPanel(6)">投资互动</a>
+                                </li>
+			      </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    </nav>
+		    <div ng-show="panelCtrl.isPanelSet(6)">
+
+                        <div class="bg-banner text-heading">投资互动</div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3 text-title border-right">微信群二维码</div>
+                                <div class="col-xs-9 text-content">
+                                    <p>
+                                    扫描下方二维码，加入生活圈项目意向投资群
+                                    </p>
+                                    <a class="fancybox" href="img/qrcode.jpg">
+                                        <img class="img-responsive" target="_blank" width="200px" src="img/qrcode.jpg">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="panelCtrl.isPanelSet(5)">
+                        <div class="bg-banner text-heading">融资计划</div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3 text-title border-right">股权结构</div>
+                                <div class="col-xs-9 text-content">
+                                    <a class="fancybox" href="img/plan.jpg">
+                                        <img class="img-responsive" src="img/plan.jpg">
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="row border-top">
+                                <div class="col-xs-3 text-title border-right">领投人介绍</div>
+                                <div class="col-xs-9 text-content">
+                                    <p>
+                                    <span>温天立</span><br>蓝莲花研究机构创始人<br>
+                                    </p>
+
+                                    <p>
+                                    温先生具备深刻的行业洞见和广泛的行业人脉，并于2015年创设了中国互联网独立研究机构-蓝莲花
+                                    </p>
+                                    <p>
+                                    从2012年到2014年，温天立先生担任华兴资本证券研究部主管并出任董事总经理。 从2010年到2012年，温天立先生担任未来资产证券 (Mirae Asset Securities) 互联网及电信研究主管，董事总经理。从2002年到2010年间温天立先生分别在法国巴黎银行，瑞银证券, MainFirst Securities和摩根士丹利任职。从2005到2007年，温天立先生分别担任中国汽车网和郁金香传媒的首席财务官。从2002-2008年温天立先生在宝洁 (P&G) 供职。
+                                    温天立先生拥有芝加哥大学MBA，伊利诺伊大学香槟分校的学士学位，并曾在复旦大学就读。
+                                    </p>
+                                    <hr>
+                                    <p>
+                                    <span>胡磊</span><br> 蓝湖资本创始合伙人
+                                    </p>
+                                    <p>
+                                    在进入风险投资行业前，胡磊曾在波士顿咨询公司（BCG）工作了4年。期间，他主要的工作是分析大量的市场和运营数据，并结合行业发展的趋势，为客户在激烈的竞争中寻找新的制胜模式，包括兼并收购、销售渠道、营销策略等。
+                                    </p>
+                                    <p>
+                                    7年前，胡磊加入了纪源资本（GGV）。期间，他投资了世纪互联（Nasdaq: VNET），去哪儿（Nasdaq: QUNR），美丽说，豆果网，聚胜万合和E店宝等公司。在投资的过程中，胡磊热衷于和企业家一起分析和探讨国内外行业发展的趋势，捕捉其中的亮点。并在严密的逻辑思考和论证之外，孜孜不倦的探索各种不确定的路径，籍此帮助被投资企业逐步建立自己的竞争优势。
+                                    </p>
+                                    <p>
+                                    蓝湖资本（ Blue Lake Capital ）是新一代的研究驱动的风险投资基金，致力于寻找有潜力的企业家并协助他们建立伟大的企业，引领行业的变革，改变人们的生活。
+                                    </p>
+                                    <p>
+                                    蓝湖资本第一期基金共 2 亿美金，主要投资于早期的互联网企业，单笔投资额通常在 100 万美金到 1500 万美金之间。
+                                    </p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row border-top">
+                                <div class="col-xs-3 text-title border-right">募资细节</div>
+                                <div class="col-xs-9 text-content">
+                                    <p>2014年第二季度生活圈获得温天立先生个人天使投资数百万元人民币；
+                                    2014年第四季度生活圈获得蓝湖资本A轮投资数百万美元，估值数千万美元。
+                                    此次众筹股权由温天立先生转让所持价值20万美元股份（约合0.5%股份），每份2万美元共10份。因考虑到A轮投资人与潜在引进的B轮投资人都会有优先购买权，此与A轮估值一致的股权转让仅能通过代持方式转让，但会由律师出具完整的法律文件保护投资人权益。
+                                    天使投资人承诺在所持股份决定全部出售时，众筹股东具有优先退出权力。</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div ng-show="panelCtrl.isPanelSet(4)">
+
+                        <div class="bg-banner text-heading">发展战略</div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3 text-title border-right">战略阐述</div>
+                                <div class="col-xs-9 text-content">
+                                    <p>
+                                    公司计划立足商超生鲜即时配送增加其他食品和非食品的消费，继续保持客单价。同时在满足用户商超消费配送的前提下，扩充社区商户种类与数量，进一步满足用户在线上平台的服务体验，提高用户使用app的频次。
+                                    </p>
+                                    <p>
+                                    <a href="img/chart.png" class="fancybox">
+                                        <img class="img-responsive" src="img/chart.png">
+                                    </a>
+                                    <a href="img/chart2.png" class="fancybox">
+                                        <img class="img-responsive" src="img/chart2.png">
+                                    </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div ng-show="panelCtrl.isPanelSet(3)">
+
+                        <div class="bg-banner text-heading">核心团队</div>
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-xs-3 text-title border-right">核心竞争力</div>
+                                <div class="col-xs-9 text-content">
+                                    团队拥有此行业中无可比拟的经验、知识以及人脉，超豪华的团队保证了项目的可行性以及执行力。团队了解商超的需求，又可以对接商超资源；同时团队对于物流体系的建立、管理、资源配置又是行家里手，拥有管理大物流团队的能力。
+                                </div>
+                            </div>
+                            <div class="row broder-top">
+                                <div class="col-xs-3 text-title border-right">团队简历</div>
+                                <div class="col-xs-9 text-content">
+                                    <div class="row people">
+                                        <div class="col-xs-8">
+                                            <h4>刘方</h4>
+                                            <small> 董事长| 创始人</small>
+                                        </div>
+                                    </div>
+                                    <p> 刘先生拥有多年商超、电商运营经验与人脉。 </p>
+
+                                    <p> 2002-2005年 家乐福北方区非食品采购总监； </p>
+                                    <p> 2005-2011年 亚马逊中国非食品采销高级总监； </p>
+                                    <p> 2011-2014年 京东商城采销副总裁。 </p>
+                                    <p> 刘先生2002年获得对外经济贸易大学MBA学位。</p>
+
+                                    <div class="row people">
+                                        <div class="col-xs-8">
+                                            <h4>张立民</h4>
+                                            <small>CEO | 联合创始人</small>
+                                        </div>
+                                    </div>
+                                    <p> 1998-2004年 中国邮政航空公司营业部副总经理；</p>
+                                    <p> 2004-2006年 顺丰快递北方区总经理；</p>
+                                    <p> 2007-2008年 北京润德快递有限公司创始人；</p>
+                                    <p> 2009-2010年 宅急送副总裁；</p>
+                                    <p> 2010-2014年 京东配送副总裁。</p>
+
+                                    <div class="row people">
+                                        <div class="col-xs-8">
+                                            <h4>郝劲刚</h4>
+                                            <small>执行副总裁 | 联合创始人</small>
+                                        </div>
+                                    </div>
+                                    <p>  2010-2014年 京东西南区总经理</p>
+
+                                    <div class="row people">
+                                        <div class="col-xs-8">
+                                            <h4>宋琤</h4>
+                                            <small> | CTO</small>
+                                        </div>
+                                    </div>
+                                    <p> 2004-2006年 新浪即使通讯事业部项目经理；</p>
+                                    <p> 2006-2008年 朗玛科技工程部部门经理；</p>
+                                    <p> 2008-2010年 宋先生任无线讯奇搜索事业部高级经理；</p>
+                                    <p> 2010-2014年 宋先生先后参与创立铜牛户外用品与威卡顿。</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div ng-show="panelCtrl.isPanelSet(2)">
+
+                        <div class="bg-banner text-heading">商业模式</div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3 text-title border-right">业务介绍</div>
+                                <div class="col-xs-9 text-content">
+                                    <p>
+                                    公司与商超达成紧密合作，在线上平台帮助商超及其他商户品牌露出，每天获取商超的SKU与定价，包括生鲜类产品。与线上同类平台甚至包括一号店相比，品类价格具有优势。
+                                    </p>
+                                    <p>
+                                    <a class="fancybox" href="img/circle.png" target="_blank">
+                                        <img src="img/circle.png" alt="" class="img-responsive"/>
+                                    </a>
+                                    </p>
+                                    <p>
+                                    因与商超合作紧密，生活圈会在商超收银处设置驻店经理管理拣货、发货流程，同时推广app的下载和使用。
+                                    </p>
+                                    <p>
+                                    平台向用户每单收取6元（5公斤内）配送费，试运营阶段还给于用户消费9折优惠，价格、地推共同导流。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row border-top">
+                                <div class="col-xs-3 text-title border-right">运营情况</div>
+                                <div class="col-xs-9 text-content">
+                                    <p>
+                                    15年1月27日北京家乐福姚家园店试营业，至3月初，共在北京开设6家家乐福店包括通州、方庄、国展、石景山和马家堡。
+                                    </p>
+                                </div> 
+                            </div>
+                            <div class="row border-top">
+                                <div class="col-xs-3 text-title border-right">运营数据</div>
+                                <div class="col-xs-9 text-content">
+                                    
+                                <table class="table table-bordered table-hover table-striped">
+                                    <tr>
+                                   <th>内容</th>
+                                   <th>截至 
+                                   2015/2/28</th>
+                                   <th>备注</th>
+                                   <th>内容</th>
+                                   <th>截至 
+                                       2015/3/8</th>
+                                   <th>备注</th>
+                                    </tr>
+                                    <tr>
+                                        <td>业务项目</td>
+                                        <td>1</td>
+                                        <td>超市代购</td>
+                                        <td>业务项目</td>
+                                        <td>1</td>
+                                        <td>超市代购</td>
+                                    </tr>
+                                    <tr>
+                                        <td>门店数量</td>
+                                        <td>1</td>
+                                        <td>家乐福姚家园店 
+                                        2015年1月27日开店</td>
+                                        <td>门店数量</td>
+                                        <td>6</td>
+                                        <td>新增家乐福通州、创益佳、方庄、石景山、马家堡店 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>覆盖人群</td>
+                                        <td>约20万</td>
+                                        <td>周边5KM</td>
+                                        <td>覆盖人群</td>
+                                        <td>约150万</td>
+                                        <td>统一为周边3KM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>订单数量</td>
+                                        <td>1055</td>
+                                        <td>成交订单</td>
+                                        <td>订单数量</td>
+                                        <td>2058</td>
+                                        <td>完成订单</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>单店日均 
+                                        订单数 </td>
+                                        <td>33</td>
+                                        <td></td>
+                                        <td>单店日均 
+                                        订单数</td>
+                                    <td>35</td>
+                                    <td>2/28-3/5日陆续开5站 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>订单金额</td>
+                                        <td>362,626 </td>
+                                        <td>54% POS结算</td>
+                                        <td>订单金额</td>
+                                        <td>672,632</td>
+                                        <td>已付金额</td>
+                                    </tr>
+                                    <tr>
+                                        <td>客单价</td>
+                                        <td>344</td>
+                                        <td>春节期间客单价偏高</td>
+                                        <td>客单价</td>
+                                        <td>271</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>注册用户</td>
+                                        <td>1184</td>
+                                        <td></td>
+                                        <td>注册用户</td>
+                                        <td>2570</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>成交用户</td>
+                                        <td>917</td>
+                                        <td></td>
+                                        <td>成交用户</td>
+                                        <td>2217</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-3 text-title border-right">竞争对手</div>
+                                <div class="col-xs-9 text-content">
+                                    <p>
+                                    <span>A.快书包</span>
+                                    快书包产品2010年6月8日上线，推出“一小时到货”服务。公司自采货物、自建仓储、自建物流，初期以图书为主，后发展进口食品机日常用品。截至2014年6月，公司累计融资共2,000万元，而2013年销售额仅1,000万元，最终不得不关闭服务。
+                                    除了融资能力外，快书包主打品类均非时效性要求高的品类，即所谓未切中用户的刚需。
+                                    </p>
+                                    <p>
+                                    <span>B.社区001</span>
+                                    2012年6月上线，同样以社区购物为切入点，与客户所在小区附近的商潮合作，自配物流人员。覆盖商超半径5公里，送达时间1小时。
+                                    公司对外披露数据是2014年覆盖近30个城市，合作商户5,000家，SKU 66万， 销售额达到20亿元人民币。2013年公司引入A轮融资1亿元人民币，2014年的B轮融资就一直未予披露。</p>
+                                    但在运营过程中，社区001存在几个问题：1）移动端上线迟缓，在14年底或15年初才刚上线，单一的PC端应该是消耗了大量的资金来获取用户，且初期体验不佳；2）淡化超市品牌的露出，最终会破坏与超市的合作，美国已有先例超市禁止Instacart采购员入场；3）自己备货、销货，直接与一号店在各品类产生竞争，但除了生鲜，所有其他品类商品的时效性要求不高，平台价格也无竞争力；4）多家媒体质疑其运营数据。
+
+                                    
+                                    <a class="fancybox" href="img/table.png">
+                                        <img src="img/table.png" alt="" class="img-responsive"/>
+                                    </a>
+                                    <a class="fancybox" href="img/table1.png">
+                                        <img src="img/table1.png" alt="" class="img-responsive"/>
+                                    </a>
+                                    <a class="fancybox" href="img/table2.png">
+                                        <img src="img/table2.png" alt="" class="img-responsive"/>
+                                    </a>
+                                    <a class="fancybox" href="img/table3.png">
+                                        <img src="img/table3.png" alt="" class="img-responsive"/>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div ng-show="panelCtrl.isPanelSet(1)">
+
+                        <div class="bg-banner text-heading">项目概述</div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3 text-title border-right">公司名称</div>
+                                <div class="col-xs-9 text-content">
+                                    北京九方如皋信息技术有限公司
+                                    <p>
+                                    提供社区”最后一公里“的物流配送，产品应用“生活圈C”已上各主流应用商店。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row border-top">
+                                <div class="col-xs-3 text-title border-right">商业模式</div>
+                                <div class="col-xs-9 text-content">生活圈是为超市、顾客、员工同时提供服务的综合服务平台。同时解决了顾客购物时间不充足，超市购物时间集中、员工生产力过剩等问题。 顾客在生活圈平台选择购物商铺、商品，由员工进行商品购买及配送工作。顾客只需要为节省的时间买单，员工收到付出劳动对等的劳务费。</div>
+                            </div>
+                            <div class="row border-top">
+                                <div class="col-xs-3 text-title border-right">核心团队</div>
+                                <div class="col-xs-9 text-content">豪华创业团队来自于京东一线副总裁级别，拥有市场上少见的全覆盖电商、商超和物流的十年以上经验。</div>
+                            </div>
+                            <div class="row border-top">
+                                <div class="col-xs-3 text-title border-right">融资计划</div>
+                                <div class="col-xs-9 text-content">
+                                    公司现正在引进B轮投资人；去年底公司引入A轮投资人，蓝湖资本，估值数千万美金；此次由天使投资人温天立按照A轮估值出让公司股份[0.5%]，作价[20]万美元，每份2万美元。<br>
+                                    <br>
+                                    <br>
+                                    <p>
+                                    <span>领投人：</span>
+                                    <hr style="margin-top: 0;">
+                                    <span>温天立，蓝莲花研究机构创始人</span><br>
+                                    温先生具备深刻的行业洞见和广泛的行业人脉，并于2015年创设了中国互联网独立研究机构-蓝莲花
+                                    <p>
+                                    从2012年到2014年，温天立先生担任华兴资本证券研究部主管并出任董事总经理。 从2010年到2012年，温天立先生担任未来资产证券 (Mirae Asset Securities) 互联网及电信研究主管，董事总经理。从2002年到2010年间温天立先生分别在法国巴黎银行，瑞银证券, MainFirst Securities和摩根士丹利任职。从2005到2007年，温天立先生分别担任中国汽车网和郁金香传媒的首席财务官。从2002-2008年温天立先生在宝洁 (P&G) 供职。
+                                    温天立先生拥有芝加哥大学MBA，伊利诺伊大学香槟分校的学士学位，并曾在复旦大学就读。
+                                    </p><br>
+                                    <br>
+                                    <span>胡磊，蓝湖资本创始合伙人</span>
+                                    <br>                              
+                                    在进入风险投资行业前，胡磊曾在波士顿咨询公司（BCG）工作了4年。期间，他主要的工作是分析大量的市场和运营数据，并结合行业发展的趋势，为客户在激烈的竞争中寻找新的制胜模式，包括兼并收购、销售渠道、营销策略等。
+                                    7年前，胡磊加入了纪源资本（GGV）。期间，他投资了世纪互联（Nasdaq: VNET），去哪儿（Nasdaq: QUNR），美丽说，豆果网，聚胜万合和E店宝等公司。在投资的过程中，胡磊热衷于和企业家一起分析和探讨国内外行业发展的趋势，捕捉其中的亮点。并在严密的逻辑思考和论证之外，孜孜不倦的探索各种不确定的路径，籍此帮助被投资企业逐步建立自己的竞争优势。<br>
+                                    <p>
+                                    蓝湖资本（ Blue Lake Capital ）是新一代的研究驱动的风险投资基金，致力于寻找有潜力的企业家并协助他们建立伟大的企业，引领行业的变革，改变人们的生活。 
+                                    </p>
+                                    <p>
+                                    蓝湖资本第一期基金共 2 亿美金，主要投资于早期的互联网企业，单笔投资额通常在 100 万美金到 1500 万美金之间。
+                                    </p>
+                                    <br>
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <div class="row border-top">
+                                <div class="col-xs-3 text-title border-right">投资亮点</div>
+                                <div class="col-xs-9 text-content">
+                                    <p>
+                                    <span>A. </span>
+                                    顶尖的创业团队拥有丰富的行业经验和人脉。创始团队由京东商城副总级别的电商老将构成，除了对电商、物流等拥有经验外，还拥有深厚的线下商超经验。
+                                    </p>
+
+                                    <p>
+                                    <span>B. </span>
+                                    切入社区O2O中的生鲜及日用品“最后一公里”配送的刚需；不同于竞争对手，生活圈仅作商超产品配送，一个价格较所有其他自备货的电商有优势，二来商超愿意与其深度合作，包括开放SKU和商超收银台。
+                                    </p>
+
+                                    <p>
+                                    <span>C. </span>
+                                    行业知名投资人背书，价格有折让。知名互联网研究员温天立参投天使轮，由GGV和DCM两位投资人创建的蓝湖资本投资了公司A轮，现公司正与多家主流接洽B轮融资。
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--[if lt IE 7]>
+                    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+                        your browser</a> to improve your experience.</p>
+                    <![endif]-->
+
+
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+                            $(".fancybox").fancybox();
+                                            
+                        });
+                    </script>
+                    <script src="http://7sbpff.com1.z0.glb.clouddn.com/js/bootstrap.min.js"></script>
+                    <script src="http://7sbpff.com1.z0.glb.clouddn.com/js/angular.min.js"></script>
+                    <script src="http://7sbpff.com1.z0.glb.clouddn.com/js/bp.js"></script>
+                </body>
+            </html>

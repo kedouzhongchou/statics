@@ -1,0 +1,47 @@
+body {
+    padding-top: 50px;
+}
+span {
+    color: #aaaaaa;
+}
+th {
+    background-color: rgb(141, 193, 66);
+    color: #ffffff;
+}
+.bg-banner{
+    background-size: cover;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 0.8em;
+    margin-top: 0;
+}
+.fix-size {
+    padding: 0.5rem 1rem;
+}
+.text-heading {
+    color: #222222;
+    font-size: 2em;
+}
+.text-title {
+    color: rgb(141, 193, 66);
+}
+.text-content {
+    color: #aaaaaa;
+}
+.text-content span {
+    color: rgb(141, 193, 66);
+}
+.border-right{
+    border-right: solid rgb(141,193,66) 1px;
+}
+.border-top {
+    margin-top: 1.5em;
+    border-top: solid 1px #aaaaaa;
+}
+.people {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.no-padding-right{
+    padding-right: 0;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="projectShowcase" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>游心旅行</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/bp.css">
+    <style>
+        .bg-banner {
+            background-image: url(http://7sbpff.com1.z0.glb.clouddn.com/images/banner/uthing.png)
+        }
+        .text-heading {
+            color: white;
+        }
+    </style>
+
+</head>
+<body ng-controller="panelController as panelCtrl">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <!--<button type="button" class="navbar-toggle collapsed fix-size" data-toggle="collapse" data-target="#nav-links">
+                <span class="glyphicon glyphicon-chevron-down text-muted"></span>
+            </button>
+            -->
+            <a class="navbar-brand" href="#">游心旅行</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="nav-links">
+            <ul class="nav navbar-nav">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+
+<div ng-show="panelCtrl.isPanelSet(1)">
+
+    <div class="bg-banner text-heading">投后管理</div>
+      
+    <div class="container">
+        <a href="fund_payment.html">
+            <h3 class="text-primary">旅行基金打款通知</h3>
+        </a>
+    </div>
+</div>
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/jquery.min.js"></script>
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/bootstrap.min.js"></script>
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/angular.min.js"></script>
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/bp.js"></script>
+</body>
+</html>

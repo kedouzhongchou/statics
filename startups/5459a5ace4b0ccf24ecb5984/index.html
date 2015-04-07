@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="projectShowcase" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="projectShowcase" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>十三月</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://7sbpff.com1.z0.glb.clouddn.com/css/bp.css">
+    <style>
+        .bg-banner {
+            background-image: url(http://7sbpff.com1.z0.glb.clouddn.com/images/banner/13month.jpg)
+        }
+    </style>
+
+</head>
+<body ng-controller="panelController as panelCtrl">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed fix-size" data-toggle="collapse" data-target="#nav-links">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-chevron-down text-muted"></span>
+            </button>
+            <a class="navbar-brand" href="#">十三月</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="nav-links">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active:panelCtrl.isPanelSet(1)}"><a href="#" ng-click="panelCtrl.setPanel(1)">项目概述</a>
+                </li>
+                <li ng-class="{active:panelCtrl.isPanelSet(2)}"><a href="#" ng-click="panelCtrl.setPanel(2)">商业模式</a>
+                </li>
+                <li ng-class="{active:panelCtrl.isPanelSet(3)}"><a href="#" ng-click="panelCtrl.setPanel(3)">核心团队</a>
+                </li>
+                <li ng-class="{active:panelCtrl.isPanelSet(4)}"><a href="#" ng-click="panelCtrl.setPanel(4)">发展战略</a>
+                </li>
+                <li ng-class="{active:panelCtrl.isPanelSet(5)}"><a href="#" ng-click="panelCtrl.setPanel(5)">融资计划</a>
+                </li>
+                <li ng-class="{active:panelCtrl.isPanelSet(6)}"><a href="#" ng-click="panelCtrl.setPanel(6)">投资互动</a>
+                </li>
+                <li ng-class="{active:panelCtrl.isPanelSet(7)}"><a href="#" ng-click="panelCtrl.setPanel(7)">项目补充</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+<div ng-show="panelCtrl.isPanelSet(7)">
+    <div class="bg-banner text-heading">项目补充</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 text-title border-right">成功案例</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>A. </span>
+                    2010年，创立“民谣在路上”巡演品牌， 其精准锁定民谣的音乐类型，以其特有的人文情怀和原创民谣赢得了观众，历时4年共计巡演238场。
+                </p>
+
+                <p>
+                    <span>B. </span>
+                    十三月唱片阶段，公司成功包装推出了民谣艺人万晓利、苏阳、川子、马条、山人乐队，及摇滚艺人谢天笑，均成为领域翘楚。
+
+                </p>
+
+                <p>
+                    <span>C. </span>
+                    为拉手网定制10集古装情景网络剧《拉手帮》，在奇艺网获得3800万点击; 与乐视网联合出品微电影《我要结婚》，获得860万点击量; 与空中网联合出品微电影《青春》，在优酷电影节获得最佳摄影奖。
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div ng-show="panelCtrl.isPanelSet(6)">
+
+    <div class="bg-banner text-heading">投资互动</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 text-title border-right">微信群二维码</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    扫描下方二维码，加入十三月项目意向投资群
+                </p>
+                <img src="img/qrcode.png" alt="" class="img-responsive"/>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-show="panelCtrl.isPanelSet(5)">
+
+    <div class="bg-banner text-heading">融资计划</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 text-title border-right">领投人介绍</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    林森，英诺天使基金合伙人，天使投资人，清华校友TMT协会副秘书长。
+                </p>
+
+                <p>
+                    连续创业者，参与创办至徳讯通、货通八方等。毕业于清华大学自动化系、清华经管学院MBA。
+                </p>
+            </div>
+        </div>
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">融资结构</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>估值:</span><br/>
+                    人民币1666.7万元
+                </p>
+
+                <p>
+                    <span>融资额:</span><br/>
+                    人民币500万元
+                </p>
+
+                <p>
+                    <span>领投人:</span><br/>
+                    英诺天使基金领投人民币150万元，<br/>
+                    占9%股权
+                </p>
+
+                <p>
+                    <span>跟投人:</span><br/>
+                <table class="table table-bordered table-hover table-striped">
+                    <tr>
+                        <td>华创资本</td>
+                        <td>100万元</td>
+                        <td>6%</td>
+                    </tr>
+                    <tr>
+                        <td>王童</td>
+                        <td>40万元</td>
+                        <td>2.4%</td>
+                    </tr>
+                <tr>
+                    <td>童玮亮</td>
+                    <td>20万元</td>
+                    <td>1.2%</td>
+                </tr>
+                <tr>
+                    <td>刑开</td>
+                    <td>20万元</td>
+                    <td>1.2%</td>
+                </tr>
+                <tr>
+                    <td>郑刚</td>
+                    <td>20万元</td>
+                    <td>1.2%</td>
+                </tr>
+                <tr>
+                    <td>蝌蚪众筹</td>
+                    <td>150万元</td>
+                    <td>9%</td>
+                </tr>
+                </table>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div ng-show="panelCtrl.isPanelSet(4)">
+
+    <div class="bg-banner text-heading">发展战略</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 text-title border-right">战略阐述</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>A.</span>
+                    版权内容经营，整合行业流失精英。“新乐府”版权库计划在未来3年内建成初步规模达到5000条的内容源，包括原生态及戏曲素材采样3000条，邀请音乐家创作加工的世界音乐歌曲1000首，REMIX舞曲1000首。渠道推广方面，“新乐府”版权内容将进行一系列非常规推广方式，如邀请国内外顶级的DJ二度创作称REMIX舞曲，通过国内10多万家慢摇吧DJ打碟进行传播推广。又如制作大量适合广场舞的专属音乐进行病毒传播。以此获得在无线音乐渠道和网络视听渠道的溢价权。
+                </p>
+
+                <p>
+                    <span>B. </span>
+                    网络众筹剧。颠覆现有网络剧制作的固有模式，以众筹和SNS等平台，将网剧的互动参与和传播热点前移，将原来处于“黑箱”状态的创作和制作过程全程透明化“互联”，充分调动具有影响力、号召力的“高富帅”大V及明星和具有规模效应的“屌丝”草根人群，通过多种创意形式，从资金、人力、创意等进行全方位“众筹”，以趣味化的众筹形式形成互动传播，打造第一部网络众筹剧。
+
+                </p>
+
+
+            </div>
+        </div>
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">财务预测</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>融资之后计划：</span>
+                </p>
+
+                <p>
+                    第一年完成营业额1500万，实现毛利润300万
+
+                </p>
+                <p>
+                    第二年完成营业额2500万，实现毛利润600万
+
+                </p>
+                <p>
+                    第三年完成营业额4000万，实现毛利润1000万
+
+                </p>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div ng-show="panelCtrl.isPanelSet(3)">
+
+    <div class="bg-banner text-heading">核心团队</div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-3 text-title border-right">团队简历</div>
+            <div class="col-xs-9 text-content">
+                <div class="row people">
+                    <div class="col-xs-4 no-padding-right">
+                        <img src="img/lzq.png" alt="" class="img-responsive"/>
+                    </div>
+                    <div class="col-xs-8">
+                        <h4>卢中强</h4>
+                        <small>十三月 | CEO</small>
+                    </div>
+                </div>
+                <p>
+                    籍贯安徽，现居住和工作在北京。著名音乐人、音乐制作人。网络秀影音艺术有限公司总经理。十三月唱片投资人，总监制。
+                </p>
+
+                <p>
+                    策划、制作、发行了包括万晓利、苏阳、谢天笑、小宋佳、小林、山人乐队、川子、马条、钟立风、杨嘉松等歌手及艺人的专辑，一手将“十三月”打造成中国另类音乐界目前最炙手可热的品牌。
+                </p>
+                <p>
+                    自2010年4月23日起，十三月唱片与榕树下文学网站共同发起“民谣在路上”全国巡演品牌，一年半内巡演城市遍布全国各地，被媒体誉为“民谣复兴运动”，成为近几年的文化大事件。
+                </p>
+                <p>
+                    主要作品：<br/>
+                    音乐代表作品:《七月》、《关于现在关于未来》、《卡门》、《织毛衣》
+                    企划和制作专辑:小宋佳《能不能幸福》、谢天笑《只有一个愿望》、万晓利《这一切没有想象得那么糟》、苏阳《贤良》、马条《马条》山人乐队《山人》、川子《今生缘》、叶蓓《幸福深处》、老狼《晴朗》、戴军《阿莲2004》、华纳影视金曲合集《颂》等。
+
+                </p>
+                <p>
+                    影视音乐作品：<br/>
+                    《命运呼叫转移》《志愿者》《证人》《第一次亲密接触》《子夜》《壮志凌云包青天》《泡芙小姐》《高级黑》《笨贼一箩筐》
+
+                </p>
+
+                <div class="row people">
+                    <div class="col-xs-4 no-padding-right">
+                        <img src="img/wmq.png" alt="" class="img-responsive"/>
+                    </div>
+                    <div class="col-xs-8">
+                        <h4>吴梦奇</h4>
+                        <small>十三月 | 副总裁</small>
+                    </div>
+                </div>
+                <p>
+                    内地著名作曲人、音乐制作人。发表作品500余首，为张靓颖、赵薇、谢娜、张杰、陈坤、尚雯婕等上百位艺人打造过众多脍炙人口的经典曲目。2013年创立E-Y音乐厂牌，主推古典音乐家和打造独立音乐人。2014年策划并主持首档音乐类脱口秀栏目《吴聊音乐》。                </p>
+
+                <p>
+                    代表作品：<br/>
+                    张靓颖《如果爱下去》《想你，零点零一分》、谢娜《菠萝菠萝蜜》、魏晨《我为自己代言》、SHE《再别康桥》、BOBO组合《光荣》等。
+
+                </p>
+
+                <div class="row people">
+                    <div class="col-xs-4 no-padding-right">
+                        <img src="img/jbs.png" alt="" class="img-responsive"/>
+                    </div>
+                    <div class="col-xs-8">
+                        <h4>姜北生</h4>
+                        <small>十三月 | CTO</small>
+                    </div>
+                </div>
+                <p>
+                    著名混音师、音响师。
+                </p>
+                <p>
+                    2005年毕业后，同年入职网络秀(十三月唱片前身)制作部助理。
+                </p>
+                <p>
+                    2006年制作混音了职业生涯中第一张唱片： 万晓利《这一切没有想象的那么糟》
+                </p>
+                <p>
+                    截止到2014年底，制作了近百张专辑唱片与上百场演唱会和音乐节。其中紧密合作的原创优秀音乐人有李志、曲婉婷、杨乃文、痛仰乐队、赵雷、逃跑计划乐队等。
+                </p>
+                <p>
+                    代表作品：李志《1701》、赵雷《吉姆餐厅》、龙神道乐队《拥抱》、逃跑计划乐队《世界》
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div ng-show="panelCtrl.isPanelSet(2)">
+
+    <div class="bg-banner text-heading">商业模式</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 text-title border-right">业务介绍</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>A. </span>
+                    版权内容。通过“新乐府”平台集合公司现有版权，各渠道使用时支付版权授权费；在民谣版权内容基础上，整合世界音乐这个细分市场资源，以差异化的音乐风格和作品，扩大“新乐府”版权库的覆盖广度和竞争力。
+                </p>
+
+                <p>
+                    <span>B. </span>
+                    线下演出和网络剧。以“民谣在路上”音乐为中坚，进行规模性巡回演出，策划音乐节、音乐舞台剧及网络剧，实现音乐基础上的网络多样内容制作，并尝试基于众筹和SNS等平台的新型网络剧制作模式，实现演出收入、艺人经济收入、广告收入。
+
+                </p>
+
+                <p>
+                    <span>C. </span>
+                    渠道营销。通过同战略合作伙伴研发新渠道产品，产生无线音乐收入；结合上述业务，通过网络和新媒体口碑营销及病毒式营销，拓展音乐内容的传播和销售渠道，扩大品牌号召力，打造独树一帜的音乐品牌形象。
+
+                </p>
+
+
+            </div>
+        </div>
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">市场现状</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>目标市场</span><br/>
+                    版权内容经营及网络自制剧。
+
+                </p>
+                <p>
+                    传统音乐市场由环球、华纳和索尼三分天下，格局清晰，主流渠道空间已经非常狭小；主流内容创作和流通途径下，音乐市场特色化和差异化的表现形式促成了音乐行业的许多重要细分市场。互联网技术的冲击下，技术一方面颠覆了音乐内容，更多音乐形式借助技术和软件实现乐器本身无法单一实现的突破和创新融合；技术另一方面颠覆了渠道，传统实体性唱片受到音乐数字形式的全面破坏，音乐网络化和数字化早已经是大势所趋。
+                </p>
+
+                <p>
+                    <span>因此“十三月”版权音乐的目标市场为：</span>
+
+                </p>
+                <p>
+                    <span>A. </span>
+                    网络渠道无法取代的线下音乐节、演出、地域特色音乐会等内容，及传统主流音乐之外的新型“世界音乐”内容创新，卡位特色版权内容市场；
+
+                </p>
+                <p>
+                    <span>B. </span>
+                    迎合互联网技术和平台，进行微电影和网络剧等内容制作，以及同数字音乐渠道商的深度合作。
+                </p>
+                <p>
+                    <span>市场规模：</span>
+                </p>
+                <p>
+                    <span>A. </span>
+                    传统演出市场中，2012年中国演唱会（艺术家或歌手以个人专场或组合方式进行的现场演出）市场共计1500场，实现票房13.3亿元；
+
+                </p>
+                <p>
+                    <span>B. </span>
+                    新兴市场中，网络演出（通过网络呈现出内容，一种是把传统演出剧目通过网络传播，一种是根据网络传播特点专门制作演出节目，如新浪网直播德云社演出）市场规模已达5亿元；而娱乐演出（在酒吧、音乐茶座等娱乐场所，或专业场馆、Live House、辅助性娱乐演出等，市场规模已达10.4亿元，其中Live House为0.5亿元。
+                </p>
+                <p>
+                    <span>C. </span>
+                    中国数字音乐现状及预测：2013年中国数字音乐整体市场（移动音乐+在线音乐）规模为74.2亿元人民币，当年实现了63.4%的增长，预计未来3年内将仍然会产生20%-30%的市场增长；
+
+                </p>
+                <p>
+                    <span>D. </span>
+                    中国音乐节数量及对比：截止至2012年，中国共有音乐节93个，同比增长34%。
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <table class="table table-bordered table-hover table-striped">
+                <tr>
+                    <th>代表性音乐节</th>
+                    <th>艺人数量（组）</th>
+                    <th>参观人数（万人）</th>
+                </tr>
+
+                <tr>
+                    <td>草莓音乐节</td>
+                    <td>260</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>迷笛音乐节</td>
+                    <td>120</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>长江音乐节</td>
+                    <td>33</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>洱海音乐节</td>
+                    <td>25</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 text-title border-right">竞争对手</div>
+            <div class="col-xs-9 text-content">
+
+
+                <p>
+                    <span>A.</span>
+                    迷笛、草莓等已经形成巨大品牌效应的成功音乐节，定位非常清晰，受众成规模且稳定增长，商业化模式相对成熟。“十三月”推出的“民谣在路上”及“新乐府”品牌音乐节，主打民谣和特色音乐内容，拥有一定的品牌影响力，音乐资源，以及管理运营、渠道等多方面的能力。
+                </p>
+
+                <p>
+                    <span>B. </span>
+                    门户视频网站《屌丝男士》、《万万没想到》等成功网络自制剧，及微电影。目前微电影行业正以爆炸式的速度在增长，除个人定制影片可不计收益外，绝大多数微电影的制作都是以营销和企业广告宣传为目的，并且都是免费观看的模式。总体来说市场还没有全面爆发，“十三月”依托近几年为合作伙伴提供订制网络视频内容的尝试和经验，仍然有打造“十三月制造”的自制剧品牌的实力。
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 text-title border-right">盈利模式</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>A. </span>基于版权内容的版权授权费、电子音乐分成；
+                </p>
+                <p>
+                    <span>B. </span>音乐节、演出、地域特色音乐会制作、门票、广告收入；
+                </p>
+                <p>
+                    <span>C. </span>音乐延伸行业的广告分成、音乐下载收费、增值音乐服务、音乐植入营销和网络剧招商。
+                </p>
+                <p>
+                    <span>目前公司基于版权内容和音乐节已经实现盈利，融资之后计划：</span>
+                </p>
+                <p>
+                    第一年完成营业额1500万，实现毛利润300万
+                </p>
+                <p>
+                    第二年完成营业额2500万，实现毛利润600万
+                </p>
+                <p>
+                    第三年完成营业额4000万，实现毛利润1000万
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div ng-show="panelCtrl.isPanelSet(1)">
+
+    <div class="bg-banner text-heading">项目概述</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 text-title border-right">公司名称</div>
+            <div class="col-xs-9 text-content">
+                “十三月”文化
+                <p>
+                    以音乐为核心概念，涉及音乐创作、艺人经营、音乐节运营、民谣特色音乐概念打造、音乐舞台剧及网络剧制作等内容。
+                </p>
+            </div>
+        </div>
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">商业模式</div>
+            <div class="col-xs-9 text-content">基于“新乐府”平台海量版权内容的音乐、演出、艺人经纪收入，及延伸出的微电影、网络众筹剧等基于互联网的新音乐内容</div>
+        </div>
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">融资计划</div>
+            <div class="col-xs-9 text-content">
+                计划融资人民币500万元人民币，出让公司股权30%。
+                <p>
+                    <span>领投人：</span>
+                </p>
+                <p>
+                    英诺天使基金，领投人民币150万元，占9%股权
+                </p>
+
+                <p><span>
+                    跟投人：
+                </span></p>
+                <table class="table table-bordered table-hover table-striped">
+                    <tr>
+                        <td>华创资本</td>
+                        <td>100万元</td>
+                        <td>6%</td>
+                    </tr>
+                    <tr>
+                        <td>王童</td>
+                        <td>40万元</td>
+                        <td>2.4%</td>
+                    </tr>
+                    <tr>
+                        <td>童玮亮</td>
+                        <td>20万元</td>
+                        <td>1.2%</td>
+                    </tr>
+                    <tr>
+                        <td>刑开</td>
+                        <td>20万元</td>
+                        <td>1.2%</td>
+                    </tr>
+                    <tr>
+                        <td>郑刚</td>
+                        <td>20万元</td>
+                        <td>1.2%</td>
+                    </tr>
+                    <tr>
+                        <td>蝌蚪众筹</td>
+                        <td>150万元</td>
+                        <td>9%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row border-top">
+            <div class="col-xs-3 text-title border-right">投资亮点</div>
+            <div class="col-xs-9 text-content">
+                <p>
+                    <span>A. </span>
+                    版权市场环境趋好，“新乐府”庞大稳定的版权库，结合在“世界音乐”细分市场抢占的先机，在内容上已经具有竞争性优势；
+                </p>
+
+                <p>
+                    <span>B. </span>
+                    原有“民谣在路上“音乐节已经形成传统和良好口碑，借助此平台锁定了许多行业流失精英，掌握行业聚合力和话语权；
+                </p>
+
+                <p>
+                    <span>C. </span>
+                    在基于互联网的新媒体上，通过成功运作微电影等形式的网络视频，产生收入的基础上，也构建了健康的口播营销传播体系，渠道优势明显。
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/jquery.min.js"></script>
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/bootstrap.min.js"></script>
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/angular.min.js"></script>
+<script src="http://7sbpff.com1.z0.glb.clouddn.com/js/bp.js"></script>
+</body>
+</html>
