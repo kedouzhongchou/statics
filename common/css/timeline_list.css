@@ -1,0 +1,79 @@
+.timeline-list-items {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.timeline-list-items:before {
+  position: absolute;
+  content: '';
+  width: 7px;
+  height: 7px;
+  left: 9px;
+  top: 4px;
+  border-radius: 50%;
+  background-color: #92c235;
+}
+.timeline-list-items:after {
+  position: absolute;
+  content: '';
+  left: 12px;
+  top: 5px;
+  z-index: -1;
+  bottom: 0;
+  border-left: 1px solid #e2e2e2;
+}
+
+.timeline-list-items li {
+  position: relative;
+  font-size: 13px;
+  line-height: 24px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.timeline-list-items li .icon {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background: url('../images/timeline_icon.png') no-repeat;
+  background-size: 235px 25px;
+}
+
+.timeline-list-items li .icon:before {
+  position: absolute;
+  content: '';
+  left: 6px;
+  top: 12px;
+  z-index: -1;
+  width: 30px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.timeline-list-items li .icon-1 {
+  background-position: -19px 1px;
+}
+
+.timeline-list-items li .icon-2 {
+  background-position: -72px 1px;
+}
+
+.timeline-list-items li .icon-3 {
+  background-position: -117px 1px;
+}
+
+.timeline-list-items li .icon-4 {
+  background-position: -170px 1px;
+}
+
+.timeline-list-items li .icon-5 {
+  background-position: -213px 1px;
+}
+
+.timeline-list-items li a {
+  display: block;
+  color: #2f2f2f;
+  margin-right: 100px;
+}
