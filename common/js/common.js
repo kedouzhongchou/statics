@@ -52,8 +52,34 @@ $("#avatarBtn").click(function (e) {
     $("#avatarFile").click();
     e.preventDefault();
 });
+
 $("#avatarFile").change(function () {
-    $("#avatarForm").submit();
+  var maxsize = 300 *1024; //300KB
+  var allowedImgExt=".jpg|.jpeg|.bmp|.png|"//全部图片格式类型
+  var invalidSizeMsg = "上传的图片文件大小不能超过300K";
+  var invalidBrowserMsg = "您的浏览器暂不支持计算上传文件的大小，请确保上传文件不要超过300K，建议使用Chrome、FireFox 浏览器";
+  var invalidImageTypeMsg = "请上传" + allowedImgExt + "类型的图片文件";
+
+  var fileName = this.files[0].name;
+  var fileSize = this.files[0].size;
+
+  if(!fileSize || !fileName || fileSize < 0){
+    alert(invalidBrowserMsg);
+    return;
+  }
+
+  var ext = fileName.substr(fileName.lastIndexOf('.')).toLowerCase();
+  if(!ext || allowedImgExt.indexOf(ext+"|") === -1){
+    alert(invalidImageTypeMsg);
+    return;
+  }
+
+  if(fileSize > maxsize){
+    alert(invalidSizeMsg);
+    return;
+  }
+
+  $("#avatarForm").submit();
 });
 // $("#avatarForm").submit(function (e) {
 //     $.ajax({
